@@ -9,7 +9,7 @@
 import numpy as np
 import pandas as pd
 pd.set_option("display.notebook_repr_html", False)
-df = pd.read_csv(r"C:\Users\lbrum\OneDrive\Documents\Uni\2024\T1\SIT220\nycflights13_weather.csv\weather.csv")
+df = pd.read_csv('data/weather.csv')
 df['temp'] = (df['temp'] - 32) * (5/9)
 df['dewp'] = (df['dewp'] - 32) * (5/9)
 df['precip'] = df['precip'] * 25.4
